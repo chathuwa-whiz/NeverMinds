@@ -1,9 +1,8 @@
-import mongoose from "mongoose";
+import connectDB from "./config/db.js";
+import dotenv from 'dotenv';
 
-mongoose.connect("mongodb+srv://navod:navod2002@mern.acr5oqy.mongodb.net/")
-    .then(() => {
-        console.log("Connected to MongoDB");
-    })
-    .catch((error) => {
-        console.log("Error connecting to MongoDB: ", error.message);
-    });
+// load the .env file
+dotenv.config();
+
+// connect to database
+connectDB();

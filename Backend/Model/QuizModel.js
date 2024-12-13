@@ -2,7 +2,12 @@ import mongoose from 'mongoose';
 
 const answerSchema = new mongoose.Schema({
     answer: {
+        type: mongoose.Schema.Types.Mixed,
+        required: true,
+    },
+    answerType: {
         type: String,
+        enum: ['text', 'image', 'number'],
         required: true,
     },
     isCorrect: {
