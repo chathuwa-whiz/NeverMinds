@@ -21,7 +21,12 @@ export const Answer = mongoose.model('Answer', answerSchema);
 
 const questionSchema = new mongoose.Schema({
     question: {
+        type: mongoose.Schema.Types.Mixed,
+        required: true,
+    },
+    questionType: {
         type: String,
+        enum: ['text', 'image'],
         required: true,
     },
     answers: [{
@@ -38,7 +43,7 @@ const quizSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
-    questions: [{
+    questions: [{ 
         type: mongoose.Schema.Types.ObjectId,
         ref: 'Question',
     }],
