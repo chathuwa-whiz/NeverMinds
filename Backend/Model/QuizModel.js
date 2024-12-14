@@ -21,13 +21,12 @@ export const Answer = mongoose.model('Answer', answerSchema);
 
 const questionSchema = new mongoose.Schema({
     question: {
-        type: mongoose.Schema.Types.Mixed,
+        type: String,
         required: true,
     },
-    questionType: {
+    image: {
         type: String,
-        enum: ['text', 'image'],
-        required: true,
+        required: false,
     },
     answers: [{
         type: mongoose.Schema.Types.ObjectId,

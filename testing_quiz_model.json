@@ -1,0 +1,42 @@
+{
+    "title": "This is main Quiz title",
+    "questions": [
+        {
+            "question": "What is the capital of France?",
+            "answers": [
+                {"answer": "Paris", "answerType": "text", "isCorrect": true},
+                {"answer": "London", "answerType": "text", "isCorrect": false},
+                {"answer": "Berlin", "answerType": "text", "isCorrect": false},
+                {"answer": "Madrid", "answerType": "text", "isCorrect": false}
+            ]
+        },
+        {
+            "question": "What is the capital of Spain?",
+            "answers": [
+                {"answer": "Paris", "answerType": "text", "isCorrect": false},
+                {"answer": "London", "answerType": "text", "isCorrect": true},
+                {"answer": "Berlin", "answerType": "text", "isCorrect": true},
+                {"answer": "Madrid", "answerType": "text", "isCorrect": true}
+            ]
+        },
+        {
+            "question": "what is the image below?",
+            "image": "https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png",
+            "answers": [
+                {"answer": "Google", "answerType": "text", "isCorrect": true},
+                {"answer": "Facebook", "answerType": "text", "isCorrect": false},
+                {"answer": "Twitter", "answerType": "text", "isCorrect": false},
+                {"answer": "Instagram", "answerType": "text", "isCorrect": false}
+            ]
+        },
+        {
+            "question": "Select the correct image below?",
+            "answers": [
+                {"answer": "https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png", "answerType": "image", "isCorrect": true},
+                {"answer": "https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png", "answerType": "image", "isCorrect": false},
+                {"answer": "https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png", "answerType": "image", "isCorrect": true},
+                {"answer": "Not all above", "answerType": "text", "isCorrect": false}
+            ]
+        }
+    ]
+}
